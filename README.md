@@ -162,6 +162,7 @@ https://www.hecticgeek.com/ext4-external-hard-disk-busy-at-idle-fix/
 https://www.linuxquestions.org/questions/linux-general-1/ext4-journaling-process-constantly-accessing-hard-drive-does-not-go-into-sleep-mode-4175686913/
 
 $ sudo ps -ef|grep jbd2
+
 root         391       2  0 10:34 ?        00:00:01 [jbd2/sda3-8]
 root        2188       2  0 10:34 ?        00:00:00 [jbd2/sdb1-8]
 root        2190       2  0 10:34 ?        00:00:00 [jbd2/sda4-8]
@@ -169,6 +170,7 @@ root       21239       2  0 12:08 ?        00:00:00 [jbd2/sdc1-8]
 Linux       21651   21197  0 12:13 pts/1    00:00:00 grep --color=auto jbd2
 
 $ sudo iotop -obtqqq | grep sdc1
+
 12:10:17   21239 be/3 root        0.00 B/s    3.83 K/s  0.00 %  0.80 % [jbd2/sdc1-8]
 12:10:22   21239 be/3 root        0.00 B/s    3.83 K/s  0.00 %  0.80 % [jbd2/sdc1-8]
 12:10:27   21239 be/3 root        0.00 B/s    3.83 K/s  0.00 %  0.80 % [jbd2/sdc1-8]
@@ -184,6 +186,7 @@ Ext4 Only, No Journal.
 ----------
 
 $ sudo mkfs -t ext4 -E lazy_itable_init=0,lazy_journal_init=0 /dev/sdc
+
 mke2fs 1.45.6 (20-Mar-2020)
 Found a gpt partition table in /dev/sdc
 Proceed anyway? (y,N) y
