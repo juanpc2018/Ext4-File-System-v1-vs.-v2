@@ -28,7 +28,7 @@ imposible to read & repair in Linux 20.04
 
 Ext4v2 is much better, 
 Ext4v1 was faster than NTFS, but Linux 10.04 & 10.10 did Not had Power Loss Fail Safe Security,
-like for Apple HFS+ Journaled "circular log",
+like Apple HFS+ Journaled "circular log",
 if you move files in Ext4v1 and power is lost, files are lost, in Linux 10.x era.
 Now thats a thing of the past.
 Ext4v2 does Not have that problem.
@@ -41,11 +41,12 @@ requires Windows Test Mode,
 https://www.acc.umu.se/~bosse/
 https://www.acc.umu.se/~bosse/ext2fsd/
 https://www.acc.umu.se/~bosse/ext2fsd/0.70/
+
 https://github.com/bobranten/Ext4Fsd
 
 The Search for the Perfect File System continues.
 Linux is Bad for ExFAT,
-but ExFAT is the only File System that can be Read in Windows & Mac without special drivers.
+but ExFAT is the only File System that can be Read&Write in Windows & Mac without special drivers.
 ExFAT is a common File Format for Mac & Win.
 ExFAT is Not as good as NTFS,
 Mac can Read NTFS, Not write, unless you use one of the NTFS drivers, free and Paid from Paragon, 
@@ -54,10 +55,10 @@ there is a big speed difference between drivers.
 Windows cannot Read HFS+, unless you buy the Paragon driver, or have Bootcamp in a Mac machine.
 Bootcamp in a Non Mac wont Write nor Move.
 
-To solve all those problems is better to have a File Server.
+To solve all those problems is better to have a File Server NAS.
 but what to install in the file server?
 Wikipedia claims NTFS is far superior than HFS+, but needs constant defrag.
-HFS+ does Not seem to Need Defrag, because it seems OSX does defrag every time a file is access.
+HFS+ does Not Need Defrag, because it seems OSX does defrag every time a file is access.
 but there is a Software, very rare, that allows to defrag HFS+
 
 Ext4 looks nice, if only used in Linux.
@@ -120,3 +121,6 @@ that could help move the files faster from A to B.
 a Ram Drive or a File Server is like the Oxygen molecule to join others.
 
 Different File Systems repel each other like Molecules with the same charge.
+
+What is the Best File System for HDD bigger than 2TB ?
+many hard leasons ahead.
