@@ -246,4 +246,7 @@ UDF Unversal Disk Format
 Btrfs seems the best candidate to test Next.
 https://en.wikipedia.org/wiki/Btrfs
 
-
+XFS also looks very advanced for its time...
+and development continued in the Linux Kernet,
+the only problems:
+https://en.wikipedia.org/wiki/XFS#Disadvantages
