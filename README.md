@@ -146,15 +146,39 @@ so much access will kill mechanic HDD,
 
 There are 2 Theories:
 
-A) HDD Energy Eficient Park does Not work well, Firmware Issue or something...
+A) HDD Energy Eficient Disk Park does Not work well, 
+Firmware Issue or something...
+
+https://askubuntu.com/questions/141075/excessive-hard-disk-activity
+
 
 B) Ext4 v2 Journaling created the problem...
 but Gparted and Gnome Disks do Not allow to Disable Journal when formatting Ext4,
 like OSX that does allow to select Journaling,
 but Mac HFS+ Journaling is circular, does Not create crazy noises for long periods of time.
 
-the temporal sollution to know if the problem is A) or B)
-is to format again, manually without Journaling,
+https://www.hecticgeek.com/ext4-external-hard-disk-busy-at-idle-fix/
+
+https://www.linuxquestions.org/questions/linux-general-1/ext4-journaling-process-constantly-accessing-hard-drive-does-not-go-into-sleep-mode-4175686913/
+
+$ sudo ps -ef|grep jbd2
+root         391       2  0 10:34 ?        00:00:01 [jbd2/sda3-8]
+root        2188       2  0 10:34 ?        00:00:00 [jbd2/sdb1-8]
+root        2190       2  0 10:34 ?        00:00:00 [jbd2/sda4-8]
+root       21239       2  0 12:08 ?        00:00:00 [jbd2/sdc1-8]
+Linux       21651   21197  0 12:13 pts/1    00:00:00 grep --color=auto jbd2
+
+$ sudo iotop -obtqqq | grep sdc1
+12:10:17   21239 be/3 root        0.00 B/s    3.83 K/s  0.00 %  0.80 % [jbd2/sdc1-8]
+12:10:22   21239 be/3 root        0.00 B/s    3.83 K/s  0.00 %  0.80 % [jbd2/sdc1-8]
+12:10:27   21239 be/3 root        0.00 B/s    3.83 K/s  0.00 %  0.80 % [jbd2/sdc1-8]
+12:10:33   21239 be/3 root        0.00 B/s    7.66 K/s  0.00 %  0.81 % [jbd2/sdc1-8]
+12:10:38   21239 be/3 root        0.00 B/s    3.84 K/s  0.00 %  0.81 % [jbd2/sdc1-8]
+12:10:43   21239 be/3 root        0.00 B/s    3.83 K/s  0.00 %  0.10 % [jbd2/sdc1-8]
+
+
+the only way to know if the problem is A) or B)
+is to format again, without Journaling,
 Ext4 Only, No Journal.
 
 ----------
@@ -177,18 +201,40 @@ Creating journal (262144 blocks): done
 Writing superblocks and filesystem accounting information: done        
 
 ------------
-DONE, problem solved..
+DONE, problem "solved"..
 
 but Journal is awesome...
 https://en.wikipedia.org/wiki/Journaling_file_system
 
-if Ext4 Journal is set active, constant access will kill the drive.
+if Ext4 Journal is set active, constant access will kill the HDD.
 if dissabled, can become corrupted after a power loss or system crash.
 
-seems Ext4 is Not the best file system for drives bigger than 2TB.
+Means Ext4 is Not the best file system for drives bigger than 2TB.
+Wikipedia say that Ext4 is better because Journal flush the cache properly at certain points.
+
+Theory is different than real life.
 
 in OSX Journaling works Ok, No weird noises.
 but Linux HFS+ does Not Mount HDD bigger than 2TB, goes crazy.
 
+
+Gparted Ext4 does Not work without Journaling.
+Disk "works" 
+Ext4 (version 1.0) — Mounted at /media/Linux/blablabla-blabla-blablabla
+
+
+Other contenders:
+XFS 
+Btrfs Copy-On-Wire developed by Oracle in 2007
+F2FS Flash Storage developed by Samsung in 2012
+ext4 v1 2006
+
+https://en.wikipedia.org/wiki/Comparison_of_file_systems
+
+UDF Unversal Disk Format
+exFAT for Flash Storage.
+
+Btrfs seems the best candidate to test Next.
+https://en.wikipedia.org/wiki/Btrfs
 
 
