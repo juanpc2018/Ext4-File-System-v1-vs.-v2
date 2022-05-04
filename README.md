@@ -217,6 +217,8 @@ Theory is different than real life.
 in OSX Journaling works Ok, No weird noises.
 but Linux HFS+ does Not Mount HDD bigger than 2TB, goes crazy.
 
+Win8.1 NTFS works Ok, No weird noises.
+Gparted cannot format 18TB with NTFS.
 
 Gparted Ext4 does Not work without Journaling.
 Disk "works" 
