@@ -207,7 +207,7 @@ but Journal is awesome...
 https://en.wikipedia.org/wiki/Journaling_file_system
 
 if Ext4 Journal is set active, constant access will kill the HDD.
-if dissabled, can become corrupted after a power loss or system crash.
+if dissabled, HDD can become corrupted after a power loss or system crash.
 
 Means Ext4 is Not the best file system for drives bigger than 2TB.
 Wikipedia say that Ext4 is better because Journal flush the cache properly at certain points.
