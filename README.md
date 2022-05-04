@@ -5,6 +5,9 @@ BEWARE!
 Ext4 v1 has 32-Bit header since the Linux 10.04 era, but...
 Ext4 v2 has 64-Bit header since Linux 20.04 era, maybe early Linux 16.04 18.04, dont know exacty when the change was made.
 
+Gnomne Disks say Ext4 is v1,00
+but that cannot be possible.
+
 The problem:
 Not compatible,
 Has the same Name.
@@ -128,3 +131,64 @@ like water & oil, immiscible in normal conditions.
 
 ¿What is the Best File System for HDD bigger than 2TB ?
 hard lesson ahead.
+
+Sadly Linux HFs+ goes crazy over 2TB HDD, just mounts 400MB.
+after decades still nobody has fixed hfsplus and hfsprogs
+
+Ext4 v2 has Journaled, like Mac HFS+, but is Not circular, its spread all over the disk,
+and that makes the HDD create very weird Noises at IDLE...
+Formating 18TB when writing Superblocks
+sounds like a Waterfall,
+then at IDLE sounds like a Helicopter Blades, 
+when "quiet" has constant access.
+there are many forums online with similar problem.
+so much access will kill mechanic HDD,
+
+There are 2 Theories:
+
+A) HDD Energy Eficient Park does Not work well, Firmware Issue or something...
+
+B) Ext4 v2 Journaling created the problem...
+but Gparted and Gnome Disks do Not allow to Disable Journal when formatting Ext4,
+like OSX that does allow to select Journaling,
+but Mac HFS+ Journaling is circular, does Not create crazy noises for long periods of time.
+
+the temporal sollution to know if the problem is A) or B)
+is to format again, manually without Journaling,
+Ext4 Only, No Journal.
+
+----------
+
+$ sudo mkfs -t ext4 -E lazy_itable_init=0,lazy_journal_init=0 /dev/sdc
+mke2fs 1.45.6 (20-Mar-2020)
+Found a gpt partition table in /dev/sdc
+Proceed anyway? (y,N) y
+Creating filesystem with 4394582016 4k blocks and 274661376 inodes
+Filesystem UUID: 176d366a-e5e7-429e-a7d5-c4baa5d3eb72
+Superblock backups stored on blocks: 
+        32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+        4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968, 
+        102400000, 214990848, 512000000, 550731776, 644972544, 1934917632, 
+        2560000000, 3855122432
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (262144 blocks): done
+Writing superblocks and filesystem accounting information: done        
+
+------------
+DONE, problem solved..
+
+but Journal is awesome...
+https://en.wikipedia.org/wiki/Journaling_file_system
+
+if Ext4 Journal is set active, constant access will kill the drive.
+if dissabled, can become corrupted after a power loss or system crash.
+
+seems Ext4 is Not the best file system for drives bigger than 2TB.
+
+in OSX Journaling works Ok, No weird noises.
+but Linux HFS+ does Not Mount HDD bigger than 2TB, goes crazy.
+
+
+
