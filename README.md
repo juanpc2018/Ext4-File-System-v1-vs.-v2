@@ -83,8 +83,8 @@ a Linux file server with dedicated external USB3.0 drive?
 
 There is also the dilema of a RAID 1 .
 for me RAID 1 does Not seem to have logic,
-because both redundant drivers are spinning all the time, at same time.
-weaaring and getting old at same time, make No sense to me.
+because both redundant HDD are spinning all the time, at same time.
+weaaring and getting old at the same time, makes No sense to me.
 a Daily backup, seems too tedious, unless its automated.
 but the wear of the backup drive will be minimal.
 a backup each week, less tedious.
@@ -102,23 +102,23 @@ for an Online server that needs fail safe 24/7 thats another story.
 Raid 1 or 10 is mandatory.
 
 Cheap Solid SSD requires Anual Backup minimum.
-The Search for the Perfect File System continues.
+The Search continues.
 
 Ext4v2 in Windows is Not a fail safe option at this moment.
-Ext4v1 is, but... Not perfect.
+Ext4v1 was, but...
 
-its like H2o molecule, 1x Hidrogen molecule cannot touch the other Hidrogen molecule directly.
+its like H2o molecule, 1x Hydrogen molecule cannot touch the other Hydrogen molecule directly.
 needs a buffer, a joiner, a barrier, like an Oxygen molecule,
 thats what i think every time i think about moving files directly from Linux, Windows & Mac File Systems,
 exactly the same.
 
 The other option, requires FAil Safe UPS,
-is a RAM Drive,
+a RAM Drive,
 Oxygen Molecule could be a Ram drive.
 with a board that allows ECC, and a very large quantity of RAM, 1TB or more.
 that could help move the files faster from A to B.
 
-a Ram Drive or a File Server is like the Oxygen molecule to join others.
+a Ram Drive or a File Server is like the Oxygen molecule.
 
 Different File Systems repel each other like Molecules with the same charge.
 
