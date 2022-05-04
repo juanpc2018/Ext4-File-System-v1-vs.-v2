@@ -12,6 +12,7 @@ Ext4v2 should have been called Ext5.
 but people installing linux maybe would had second thoughts installing Ext5.
 
 Anyway...
+
 opening an Ext4v2 formatted hdd in a Ext4v1 machine,
 will corrupt the headers of the Ext4v2 hdd, making it unreadable in Linux 20.04 with Ext4v2.
 
