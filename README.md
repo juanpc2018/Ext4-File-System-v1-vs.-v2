@@ -229,15 +229,19 @@ Ext4 (version 1.0) — Mounted at /media/Linux/blablabla-blabla-blablabla
 
 
 Other contenders:
-XFS 
+XFS developed by SGI in 2004 for IRIX OS.
+
 Btrfs Copy-On-Wire developed by Oracle in 2007
+
 F2FS Flash Storage developed by Samsung in 2012
-ext4 v1 2006
+
+Ext4 v1.00 2006
+
+ExFAT Microsoft 2006
 
 https://en.wikipedia.org/wiki/Comparison_of_file_systems
 
 UDF Unversal Disk Format
-exFAT for Flash Storage.
 
 Btrfs seems the best candidate to test Next.
 https://en.wikipedia.org/wiki/Btrfs
