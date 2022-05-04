@@ -126,4 +126,4 @@ Different File Systems repel each other like Molecules with the same charge.
 like water & oil, immiscible in normal conditions.
 
 ¿What is the Best File System for HDD bigger than 2TB ?
-hard leasons ahead.
+hard lesson ahead.
