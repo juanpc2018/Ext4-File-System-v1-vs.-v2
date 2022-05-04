@@ -91,15 +91,16 @@ a backup each week, less tedious.
 
 There are different Sync Softwares,
 All Way Sync for Windows is very good, but i dont like NTFS Defrag.
-Apple has command line rsync, and there is a GUI forntend.
+Apple has command line rsync, and there is a GUI frontend.
 
 Raid 1 Mirrired makes less sense to me today, 
-i want to extend the life of the Backup hdd as much as possible.
+i want to extend the life of the Backup hdd as much as possible,
 minimal wear, less probablility of failure, unless bad luck.
-If Mirror was asymetric in Time...
+If Mirror had asymetric Time...
 
 for an Online server that needs fail safe 24/7 thats another story.
 Raid 1 or 10 is mandatory.
+Or a company that cannot risk losing 1 to 24 hours of information.
 
 Cheap Solid SSD requires Anual Backup minimum.
 The Search continues.
@@ -107,10 +108,11 @@ The Search continues.
 Ext4v2 in Windows is Not a fail safe option at this moment.
 Ext4v1 was, but...
 
-its like H2o molecule, 1x Hydrogen molecule cannot touch the other Hydrogen molecule directly.
-needs a buffer, a joiner, a barrier, like an Oxygen molecule,
-thats what i think every time i think about moving files directly from Linux, Windows & Mac File Systems,
+its like H2o molecule, every time i think about moving files directly from Linux, Windows & Mac File Systems,
 exactly the same.
+1x Hydrogen molecule cannot touch the other Hydrogen molecule directly.
+needs a buffer, a joiner, a barrier, emulsion, like an Oxygen molecule,
+thats what i think.
 
 The other option, requires FAil Safe UPS,
 a RAM Drive,
@@ -121,6 +123,7 @@ that could help move the files faster from A to B.
 a Ram Drive or a File Server is like the Oxygen molecule.
 
 Different File Systems repel each other like Molecules with the same charge.
+like water & oil, immiscible in normal conditions.
 
-What is the Best File System for HDD bigger than 2TB ?
-many hard leasons ahead.
+¿What is the Best File System for HDD bigger than 2TB ?
+hard leasons ahead.
