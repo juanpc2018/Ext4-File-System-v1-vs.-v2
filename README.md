@@ -283,8 +283,8 @@ the other Partition File Recovery Softwares also unknown.
 
 The Most compatible paid driver FileSystems:
 APFS
-Ext4 from Paragon.
 HFS+ for Linux and HFS+ for Windows from Paragon.
+Ext4 from Paragon.
 
 APFS driver for Linux, 
 APFS driver for Windows, 
@@ -311,8 +311,6 @@ https://github.com/osxfuse/osxfuse/wiki/List-of-macFUSE-File-Systems
 https://github.com/osxfuse/osxfuse/releases
 
 https://sourceforge.net/projects/fusexfs/files/releases/
-
-https://www.paragon-software.com/home/linuxfs-windows/#
 
 https://www.paragon-software.com/about/products-a-to-z/
 
@@ -361,3 +359,6 @@ https://www.paragon-software.com/paragon-file-system/#
 
 6:30 Hours Rsync ...
 
+----
+
+7:00 Hours Rsync ...
