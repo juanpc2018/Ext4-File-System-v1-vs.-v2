@@ -367,9 +367,9 @@ https://www.paragon-software.com/paragon-file-system/#
 
 18:00 Hours Rsync and some Files FAiled, on the Linux Free NTFS driver side.
 
-Option A) Buy the Paragon NTFS Pro driver for Linux.
+Option A) Buy the Paragon NTFS Pro driver for Linux. Rsync again should be much faster, most of the work is done.
 
-Option B) Install NTFS HDD in Windows8.1, 
-Share with Samba3, 10G SPF+ Direct Network, Rsync from Shared Windows Folder.
+Option B) Install the NTFS 18TB HDD in Windows8.1, 
+Share with Samba3, 10G SPF+ Direct Network, Rsync from Shared Windows HDD.
 
 ----
