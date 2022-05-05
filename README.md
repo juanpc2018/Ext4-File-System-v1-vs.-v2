@@ -268,7 +268,7 @@ and move HDD physically.
 
 The main FS drivers ive seen:
 Paragon Paid.
-macFUSE
+macFUSE.
 Ext2Fsb >0.70
 
 macFUSE can Read XFS in OSX,
@@ -285,7 +285,7 @@ Paragon has developed APFS drivers for Linux, Windows, Old OSX 10.10 Yosemite, 1
 APFS comes Free in OSX HighSierra, is compatible with Intel and M1.
 
 also has developed Ext2/3/4 for Windows "paid Ext2Fsb", 
-and Ext2/3/4 for OSX.
+and Ext2/3/4 for OSX "paid macFUSE".
 Linux comes with Ext2/3/4
 
 
