@@ -132,8 +132,10 @@ like water & oil, immiscible in normal conditions.
 ¿What is the Best File System for HDD bigger than 2TB ?
 hard lesson ahead.
 
-Sadly Linux HFs+ goes crazy over 2TB HDD, just mounts 400MB.
+Sadly Free Linux HFs+ goes crazy over 2TB HDD, just mounts 400MB.
 after decades still nobody has fixed hfsplus and hfsprogs
+why? because there is a Paid HFS+ for Linux from Paragon.
+claims complete file support, and comes bundle with better/faster NTFS for Linux.
 
 Ext4 v2 has Journaled, like Mac HFS+, but is Not circular, its spread all over the disk,
 and that makes the HDD create very weird Noises at IDLE...
@@ -279,20 +281,28 @@ EaseUS claims their File Explorer in the Partition Manager allows to Read Linux 
 minitool is unknown.
 the other Partition File Recovery Softwares also unknown.
 
-The Most compatible FileSystems are APFS and Ext4 from Paragon.
+The Most compatible paid driver FileSystems:
+APFS
+Ext4 from Paragon.
+HFS+ for Linux and HFS+ for Windows from Paragon.
 
-Paragon has developed APFS drivers for Linux, Windows, Old OSX 10.10 Yosemite, 10.11 El CApitan, 10.12 Sierra,
-APFS comes Free in OSX HighSierra, is compatible with Intel and M1.
+APFS driver for Linux, 
+APFS driver for Windows, 
+APFS driver dor Old OSX 10.10 Yosemite, 10.11 El CApitan, 10.12 Sierra,
+APFS comes in OSX HighSierra, compatible with Intel and M1.
 
-also has developed Ext2/3/4 for Windows "paid Ext2Fsb", 
-and Ext2/3/4 for OSX "paid macFUSE".
-Linux comes with Ext2/3/4
+Ext2/3/4 for Windows "paid Ext2Fsb", 
+Ext2/3/4 for OSX "paid macFUSE".
+Linux comes with Ext2/3/4 Native.
 
+HFS+ for Linux.
+HFS+ for Windos.
+OSX comes with HFS+ Native.
 
-APFS seems the most compatible alternative to people that do Not want a Dedicated 10G SFP+ File Server..
+the most compatible alternatives to people that do Not want a dedicated 10G SFP+ File Server..
 
 Paragon HFS+ Driver for Windows in theory could load >2TB HDD in Linux.
-
+will see.
 
 https://superuser.com/questions/429770/mount-xfs-partition-on-os-x-using-osxfuse
 
