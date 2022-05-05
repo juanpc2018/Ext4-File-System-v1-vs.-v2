@@ -16,10 +16,10 @@ but people installing linux maybe would had second thoughts installing Ext5.
 
 Anyway...
 
-opening an Ext4v2 formatted hdd in a Ext4v1 machine,
+open/mount an Ext4v2 formatted hdd in a Ext4v1 machine,
 will corrupt the headers of the Ext4v2 hdd, making it unreadable in Linux 20.04 with Ext4v2.
 
-opening an Ext4 formatted hdd in a Ext4 machine,
+open/mount an Ext4 formatted hdd in a Ext4 machine,
 will corrupt the headers of the Ext4 hdd, making it unreadable in Linux 20.04 with Ext4.
 
 Thats how crazy it is.
@@ -63,7 +63,7 @@ To solve all those problems is better to have a File Server NAS.
 but what to install in the file server?
 Wikipedia claims NTFS is far superior than HFS+, but needs constant defrag.
 HFS+ does Not Need Defrag, because it seems OSX does defrag every time a file is access.
-but there is a Software, very rare, that allows to defrag HFS+
+but there is a Software, very rare, DiskTools Pro by Macware that allows to defrag HFS+
 
 Ext4 looks nice, if only used in Linux.
 
@@ -76,8 +76,8 @@ So far i have Not found a Universal File Format,
 thats why a File Server is the best option, with fast 10G ethernet that allows a max speed of 1200MB/s.
 
 Windows File server requires constant defrag.
-Linux HFS+ could be interesting if only using Linux & OSX, seems to have less issues than ExFAT in Linuxm, also Linux HFS+ is the fastest.
-ExFAT is  Not recommended, unless is an emergency, or a small drive, Not a 2TB or larger.
+Linux HFS+ could be interesting if only using Linux & OSX, seems to have less issues than ExFAT in Linuxm, also Linux HFS+ is  faster.
+ExFAT is Not recommended, unless its an emergency, or a small drive, Not a 2TB or larger.
 Ext4v2 good for linux 20.x.
 
 Seems that having an External USB3.0 drive is Not a good option if need 3 operating systems.
