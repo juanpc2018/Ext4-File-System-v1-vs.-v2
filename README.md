@@ -146,7 +146,7 @@ so much access will kill mechanic HDD,
 
 There are 2 Theories:
 
-A) HDD Energy Eficient Disk Park does Not work well, 
+A) HDD Energy Efficient Disk / Head Park does Not work well, 
 Firmware Issue or something...
 
 https://askubuntu.com/questions/141075/excessive-hard-disk-activity
