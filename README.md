@@ -373,3 +373,17 @@ Option B) Install the NTFS 18TB HDD in Windows8.1,
 Share with Samba3, 10G SPF+ Direct Network, Rsync from Shared Windows HDD.
 
 ----
+ADVISE:
+
+When moving many small HDD to a 1x large HDD, many 500MB & 1TB to 1x 18TB HDD.
+
+there are different methods:
+
+A) select all files & folders & copy as is,
+duplicated files & folders will be detected.
+good option if want to optimize space, but is risky.
+
+B) copy each HDD to a separaded folder,
+duplicated files & folders will be copied too and more space is required.
+but is safer, then copy from the same large HDD to main path to detect duplicated files & folders.
+double the work, more space needed, but safer.
