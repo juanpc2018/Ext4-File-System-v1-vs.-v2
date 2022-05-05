@@ -251,3 +251,103 @@ XFS also looks very advanced for its time...
 and development continued in the Linux Kernet,
 the only problems:
 https://en.wikipedia.org/wiki/XFS#Disadvantages
+
+-----
+5 Hours doing LuckyBackup Rsync ... OK
+NTFS to XFS
+
+----
+
+Alternatives:
+
+Method A) Have a Dedicated File Server.
+Linux, Windows, OSX.
+
+Method B) have a compatible File System across all machines,
+and move HDD physically.
+
+The main FS drivers ive seen:
+Paragon Paid.
+macFUSE
+Ext2Fsb >0.70
+
+macFUSE can Read XFS in OSX,
+Paragon can Read XFS on Windows. 
+Paragon can Read Btrfs on Windows. 
+
+EaseUS claims their File Explorer in the Partition Manager allows to Read Linux File Systems,
+minitool is unknown.
+the other Partition File Recovery Softwares also unknown.
+
+The Most compatible FileSystems are APFS and Ext4 from Paragon.
+
+Paragon has developed APFS drivers for Linux, Windows, Old OSX 10.10 Yosemite, 10.11 El CApitan, 10.12 Sierra,
+APFS comes Free in OSX HighSierra, is compatible with Intel and M1.
+
+also has developed Ext2/3/4 for Windows "paid Ext2Fsb", 
+and Ext2/3/4 for OSX.
+Linux comes with Ext2/3/4
+
+
+APFS seems the most compatible alternative to people that do Not want a Dedicated 10G SFP+ File Server..
+
+Paragon HFS+ Driver for Windows in theory could load >2TB HDD in Linux.
+
+
+https://superuser.com/questions/429770/mount-xfs-partition-on-os-x-using-osxfuse
+
+https://github.com/osxfuse/osxfuse/wiki/List-of-macFUSE-File-Systems
+
+https://github.com/osxfuse/osxfuse/releases
+
+https://sourceforge.net/projects/fusexfs/files/releases/
+
+https://www.paragon-software.com/home/linuxfs-windows/#
+
+https://www.paragon-software.com/about/products-a-to-z/
+
+
+Linux comes with Free NTFS and HFS+ drivers,
+but Paragon claims their drivers are Faster & Better.
+interesting.
+
+https://www.paragon-software.com/home/ntfs-linux-professional/#
+
+https://www.paragon-software.com/home/hfs-windows/#
+
+APFS
+
+https://www.paragon-software.com/home/apfs-linux/#
+
+https://www.paragon-software.com/home/apfs-windows/#
+
+
+Btrfs
+https://www.paragon-software.com/business/btrfs-for-windows/#
+
+
+ReFS Windows Server
+
+https://www.paragon-software.com/business/refs-linux/#
+
+https://www.paragon-software.com/business/refs-for-windows/#
+
+
+Ext2/3/4 for OSX
+
+https://www.paragon-software.com/home/extfs-mac/#
+
+Ext2/3/4 for Windows
+
+https://www.paragon-software.com/business/extfs-for-windows/#
+
+https://www.paragon-software.com/home/linuxfs-windows/#
+
+Paragon Propietary SDK FileSystem
+
+https://www.paragon-software.com/paragon-file-system/#
+
+----
+
+6:30 Hours Rsync ...
+
