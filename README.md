@@ -11,7 +11,7 @@ but that cannot be possible.</br>
 The problem:</br>
 Not backward compatible,</br>
 Has the same Name.</br>
-Ext4v2 should have been called Ext5.</br>
+Ext4 v2 or Ext4 64-Bit should have been called Ext5.</br>
 
 Anyway...</br>
 open/mount an Ext4v2 formatted hdd in a Ext4v1 machine,</br>
